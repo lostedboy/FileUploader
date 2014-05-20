@@ -1,5 +1,5 @@
 {
-    "name": "lostedboy/FileUploader",
+    "name": "lostedboy/file-uploader",
     "description": "FileUploader PHP backend, 5.3 compliant",
     "keywords": ["FileUploader", "filemanager"],
     "homepage": "https://github.com/lostedboy/FileUploader",
