@@ -31,8 +31,6 @@ class ElFinder
      **/
     protected $volumes = array();
 
-    protected $netVolumes = array();
-
     protected $header;
 
     public static $netDrivers = array();
@@ -499,8 +497,7 @@ class ElFinder
      */
     protected function getNetVolumes()
     {
-        return $this->netVolumes;
-        //return isset($_SESSION['elFinderNetVolumes']) && is_array($_SESSION['elFinderNetVolumes']) ? $_SESSION['elFinderNetVolumes'] : array();
+        return isset($_SESSION['elFinderNetVolumes']) && is_array($_SESSION['elFinderNetVolumes']) ? $_SESSION['elFinderNetVolumes'] : array();
     }
 
     public function setHeader($header)
@@ -517,8 +514,7 @@ class ElFinder
      */
     protected function saveNetVolumes($volumes)
     {
-        $this->netVolumes = $volumes;
-        //$_SESSION['elFinderNetVolumes'] = $volumes;
+        $_SESSION['elFinderNetVolumes'] = $volumes;
     }
 
     /***************************************************************************/
